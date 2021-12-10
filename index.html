@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube | Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;  700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/338c6237/img/favicon_32x32.png" sizes="32x32">
+</head>
+
+<body>
+    <header>
+        <div class="logo-cont">
+            <div class="hamburger"><a href="#" class="hamburger-a"><span class="ham-span"></span><span class="ham-span"></span><span class="ham-span"></span></a></div>
+            <a href="#" class="header-logo">
+                <img src="https://www.transparentpng.com/thumb/youtube-logo/hd-youtube-logo-image-5.png" class="header-logo-img" alt="youtube-logo">
+            </a>
+            <span>IN</span>
+        </div>
+        <form action="">
+            <input type="text" name="search" placeholder="Search">
+            <button class="header-search" type="submit"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#666" focusable="false"style="pointer-events: none; display: block; width: 20px;"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" ></path></svg></button>
+            <svg class="header-mic" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#666"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g/><g><path d="M12,14c1.66,0,3-1.34,3-3V5c0-1.66-1.34-3-3-3S9,3.34,9,5v6C9,12.66,10.34,14,12,14z"/><path d="M17,11c0,2.76-2.24,5-5,5s-5-2.24-5-5H5c0,3.53,2.61,6.43,6,6.92V21h2v-3.08c3.39-0.49,6-3.39,6-6.92H17z"/></g></g></svg>
+        </form>
+        <div class="user-menus">
+            <a href="#"><svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" class="user-menu-items" fill="#666"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#666" class="user-menu-items"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#666" class="user-menu-items"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#666" class="user-menu-items"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="side-navbar">
+
+            <ul>
+                <li><a href="#" style="color:#ff0000;"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; fill:#ff0000; "><g ><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8"></path></g></svg> Home</a></li>
+                <li>
+                    <a href="#"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; "><g class="style-scope yt-icon"><path d="M11.23 13.08c-.29-.21-.48-.51-.54-.86-.06-.35.02-.71.23-.99.21-.29.51-.48.86-.54.35-.06.7.02.99.23.29.21.48.51.54.86.06.35-.02.71-.23.99a1.327 1.327 0 01-1.08.56c-.28 0-.55-.08-.77-.25zM22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zm-3.97-6.03L9.8 9.8l-3.83 8.23 8.23-3.83 3.83-8.23z" class="style-scope yt-icon"></path></g></svg> Explore</a></li>
+                <li>
+                    <a href="#"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; "><g class="style-scope yt-icon"><path d="M18.7 8.7H5.3V7h13.4v1.7zm-1.7-5H7v1.6h10V3.7zm3.3 8.3v6.7c0 1-.7 1.6-1.6 1.6H5.3c-1 0-1.6-.7-1.6-1.6V12c0-1 .7-1.7 1.6-1.7h13.4c1 0 1.6.8 1.6 1.7zm-5 3.3l-5-2.7V18l5-2.7z" class="style-scope yt-icon"></path></g></svg> Subscriptions</a></li>
+                <li>
+                    <a href="#"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; "><g class="style-scope yt-icon"><path fill="none" d="M0 0h24v24H0z" class="style-scope yt-icon"></path><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z" class="style-scope yt-icon"></path></g></svg> Library</a></li>
+            </ul>
+
+        </div>
+        <div class="main-section">
+            <div class="categories">
+                <section class="categories-section">
+                    <div class="category-item active">All</div>
+                    <div class="category-item">Recommended</div>
+                    <div class="category-item">Python</div>
+                    <div class="category-item">Web Dev</div>
+                    <div class="category-item">React JS</div>
+                    <div class="category-item">Music</div>
+                    <div class="category-item">CSS</div>
+                    <div class="category-item">HTML</div>
+                    <div class="category-item">AJAX</div>
+                    <div class="category-item">ASPX</div>
+                    <div class="category-item">jQuery</div>
+                    <div class="category-item">Hooks</div>
+                    <div class="category-item">Angular</div>
+                    <div class="category-item">Node.js</div>
+                    <div class="category-item">MERN</div>
+                    <button class="scroll-x">&emsp; &gt;</button>
+                </section>
+
+            </div>
+            <div class="videos">
+                <section class="video-section">
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="video-section">
+                    <h2 class="video-section-title">Special Section
+                        <button class="video-section-title-close">&times;</button>
+                    </h2>
+
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                </section>
+                <section class="video-section">
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="video-cont">
+                        <a href="#" class="thumbnail" data-duration="20:56">
+                            <img src="https://unsplash.it/283/159?space=center" alt="thumbnail" class="thumbnail-image">
+                        </a>
+                        <div class="video-bottom">
+                            <a href="#" class="channel-icon">
+                                <img src="https://unsplash.it/38/38?face=center" alt="channel icon" class="channel-image">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">This is a video</a>
+                                <a href="#" class="channel-name">Mr. YouTuber</a>
+                                <div class="views-section">
+                                    56K views • 4 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
